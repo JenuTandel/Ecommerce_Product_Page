@@ -12,6 +12,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    HeaderComponent,
+    SidebarComponent
   ]
 })
 export class CoreModule { }

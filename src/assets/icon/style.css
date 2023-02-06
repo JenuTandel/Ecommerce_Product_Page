@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4wu8sm');
-  src:  url('fonts/icomoon.eot?4wu8sm#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4wu8sm') format('truetype'),
-    url('fonts/icomoon.woff?4wu8sm') format('woff'),
-    url('fonts/icomoon.svg?4wu8sm#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?4wu8sm");
+  src: url("fonts/icomoon.eot?4wu8sm#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?4wu8sm") format("truetype"),
+    url("fonts/icomoon.woff?4wu8sm") format("woff"),
+    url("fonts/icomoon.svg?4wu8sm#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -28,6 +29,10 @@
 .icon-cart:before {
   content: "\e900";
   color: #69707d;
+}
+.icon-cart-white:before {
+  content: "\e900";
+  color: #ffffff;
 }
 .icon-close:before {
   content: "\e901";

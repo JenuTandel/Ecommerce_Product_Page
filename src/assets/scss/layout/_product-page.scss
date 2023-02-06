@@ -1,0 +1,106 @@
+//product-page
+.hero-image {
+    height: 300px;
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    img {
+        object-fit: cover;
+
+        @include media-breakpoint-up(md) {
+            border-radius: 20px;
+        }
+    }
+}
+
+.image-wrapper {
+    height: 38px;
+    width: 38px;
+
+    img {
+        width: 9px;
+        height: 12px;
+    }
+}
+
+.content-wrapper {
+    .company-name {
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 24px;
+        color: $secondary
+    }
+
+    h1 {
+        @include media-breakpoint-up(xl) {
+            font-size: 3rem;
+        }
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .discount-wrapper {
+        height: 25px;
+        width: 50px;
+        background-color: hsl(25, 100%, 94%);
+    }
+
+    .addtocart {
+        img {
+            color: white;
+        }
+    }
+
+    button {
+        box-shadow: -1px 14px 65px -1px rgba(221, 160, 114, 0.75);
+    }
+}
+
+.images-wrapper {
+    padding: 0px;
+
+    @include media-breakpoint-up(md) {
+        padding: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 70px;
+    }
+
+}
+
+.thumbnail-images {
+
+    padding-top: 40px;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        @include media-breakpoint-up(md) {
+            border-radius: 12px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-left: 12px;
+            border-radius: 20px;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}

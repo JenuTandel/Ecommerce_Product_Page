@@ -1,0 +1,9 @@
+.page-wrapper {
+    @include media-breakpoint-up(md) {
+        width: 90%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 80%;
+    }
+}

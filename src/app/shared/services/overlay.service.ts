@@ -1,11 +1,9 @@
 import { ComponentRef, Injectable } from '@angular/core';
-import { Overlay, OverlayRef } from '@angular/cdk/overlay';
+import { Overlay } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
 import { Subject } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class OverlayService {
   public closeDialog: Subject<boolean>;
   public instance: any;
@@ -20,9 +18,9 @@ export class OverlayService {
     // Create the overlay with customizable options
     const overlayRef = this.overlay.create({
       positionStrategy,
-      backdropClass: 'overlay-backdrop',
       hasBackdrop: true,
-      panelClass: 'overlay-panel',
+      backdropClass: 'backdropClass',
+      panelClass: 'panelClass',
     });
 
     const portal = new ComponentPortal(component);

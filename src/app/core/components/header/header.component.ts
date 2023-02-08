@@ -11,7 +11,10 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 export class HeaderComponent {
   constructor(private overlayService: OverlayService) {}
   openSidebar() {
-    console.log('calling');
     this.overlayService.openDialog(SidebarComponent);
+  }
+
+  openCart() {
+    this.overlayService.openDialog(CartComponent);
   }
 }

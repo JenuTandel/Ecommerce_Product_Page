@@ -1,0 +1,18 @@
+.card {
+    width: 360px;
+
+    .card-title {
+        padding: $card-spacer-x;
+
+        h6 {
+            margin-bottom: 4px;
+        }
+    }
+
+    .card-body {
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

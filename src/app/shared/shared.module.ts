@@ -7,7 +7,7 @@ import { CartComponent } from './components/cart/cart.component';
 @NgModule({
   declarations: [CartComponent],
   imports: [CommonModule, OverlayModule],
-  providers: [OverlayService],
+  providers: [],
   exports: [CartComponent],
 })
 export class SharedModule {}

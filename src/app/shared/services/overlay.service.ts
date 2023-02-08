@@ -19,8 +19,6 @@ export class OverlayService {
     const overlayRef = this.overlay.create({
       positionStrategy,
       hasBackdrop: true,
-      backdropClass: 'backdropClass',
-      panelClass: 'panelClass',
     });
 
     const portal = new ComponentPortal(component);

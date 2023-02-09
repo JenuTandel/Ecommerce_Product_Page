@@ -1,0 +1,38 @@
+.hero-image {
+    height: 200px;
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    img {
+        object-fit: cover;
+
+        @include media-breakpoint-up(md) {
+            border-radius: 20px;
+        }
+    }
+}
+
+.image-wrapper {
+    height: 38px;
+    width: 38px;
+
+    img {
+        width: 9px;
+        height: 12px;
+    }
+}
+
+// .images-wrapper {
+//     padding: 0px;
+
+//     @include media-breakpoint-up(md) {
+//         padding: 30px;
+//     }
+
+//     @include media-breakpoint-up(lg) {
+//         padding: 50px;
+//     }
+// }

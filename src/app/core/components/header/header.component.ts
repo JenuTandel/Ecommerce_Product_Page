@@ -11,6 +11,7 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 })
 export class HeaderComponent implements OnInit {
   private data: any;
+  cartitems!: number;
   constructor(
     private overlayService: OverlayService,
     private cartService: CartService
@@ -25,6 +26,7 @@ export class HeaderComponent implements OnInit {
       this.data.price = res.price;
       this.data.quantity = res.quantity;
       this.data.totalPrice = res.totalPrice;
+      this.cartitems = res.quantity;
     });
   }
   openSidebar() {

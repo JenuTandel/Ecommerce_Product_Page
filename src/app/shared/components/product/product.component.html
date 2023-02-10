@@ -1,18 +1,41 @@
-<div class="images-wrapper d-flex flex-column">
-  <figure class="hero-image">
-    <img src="./../../../../assets/images/image-product-1.jpg" />
+<div
+  class="images-wrapper h-100 d-md-flex d-none flex-column justify-content-center align-items-center"
+>
+  <div class="text-end text-white w-100 mb-3">
+    <span class="icon icon-close-white" (click)="onClose()"></span>
+  </div>
+  <figure class="product-image position-relative">
+    <img
+      src="{{ './../../../../assets/images/image-product-' + number + '.jpg' }}"
+    />
+    <div
+      class="d-flex justify-content-between w-100 position-absolute top-50 start-50 translate-middle"
+    >
+      <div
+        class="image-wrapper btn-previous position-relative rounded-circle bg-white d-flex align-items-center justify-content-center"
+        (click)="onPrevious()"
+      >
+        <img src="./../../../../assets/images/icon-previous.svg" />
+      </div>
+      <div
+        class="image-wrapper btn-next position-relative rounded-circle bg-white d-flex align-items-center justify-content-center"
+        (click)="onNext()"
+      >
+        <img src="./../../../../assets/images/icon-next.svg" />
+      </div>
+    </div>
   </figure>
-  <div class="row thumbnail-images d-none d-md-flex justify-content-md-between">
-    <div class="col-3">
+  <div class="d-flex">
+    <div class="product-image-wrapper" (click)="openImage(1)">
       <img src="./../../../../assets/images/image-product-1-thumbnail.jpg" />
     </div>
-    <div class="col-3">
+    <div class="product-image-wrapper" (click)="openImage(2)">
       <img src="./../../../../assets/images/image-product-2-thumbnail.jpg" />
     </div>
-    <div class="col-3">
+    <div class="product-image-wrapper" (click)="openImage(3)">
       <img src="./../../../../assets/images/image-product-3-thumbnail.jpg" />
     </div>
-    <div class="col-3">
+    <div class="product-image-wrapper" (click)="openImage(4)">
       <img src="./../../../../assets/images/image-product-4-thumbnail.jpg" />
     </div>
   </div>

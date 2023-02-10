@@ -6,7 +6,7 @@
       <div class="images-wrapper d-flex flex-column">
         <figure class="hero-image" (click)="onProduct()">
           <img
-            src="./assets/images/image-product-1.jpg"
+            src="{{ './assets/images/image-product-' + number + '.jpg' }}"
             height="100%"
             width="100%"
           />
@@ -14,17 +14,50 @@
         <div
           class="row thumbnail-images d-none d-md-flex justify-content-md-between"
         >
-          <div class="col-3">
-            <img src="./assets/images/image-product-1-thumbnail.jpg" />
+          <div class="col-3 d-flex" (click)="openImage(1)">
+            <input
+              type="radio"
+              name="thumbnail"
+              id="img1"
+              class="thumbnail-image d-none"
+              checked
+            />
+            <label for="img1">
+              <img src="./assets/images/image-product-1-thumbnail.jpg" />
+            </label>
           </div>
-          <div class="col-3">
-            <img src="./assets/images/image-product-2-thumbnail.jpg" />
+          <div class="col-3 d-flex" (click)="openImage(2)">
+            <input
+              type="radio"
+              name="thumbnail"
+              id="img2"
+              class="thumbnail-image d-none"
+            />
+            <label for="img2">
+              <img src="./assets/images/image-product-2-thumbnail.jpg" />
+            </label>
           </div>
-          <div class="col-3">
-            <img src="./assets/images/image-product-3-thumbnail.jpg" />
+          <div class="col-3 d-flex" (click)="openImage(3)">
+            <input
+              type="radio"
+              name="thumbnail"
+              id="img3"
+              class="thumbnail-image d-none"
+            />
+            <label for="img3">
+              <img src="./assets/images/image-product-3-thumbnail.jpg" />
+            </label>
           </div>
-          <div class="col-3">
-            <img src="./assets/images/image-product-4-thumbnail.jpg" />
+          <div class="col-3 d-flex" (click)="openImage(4)">
+            <input
+              type="radio"
+              name="thumbnail"
+              id="img4"
+              class="thumbnail-image d-none"
+            />
+            <label for="img4">
+              <img src="./assets/images/image-product-4-thumbnail.jpg" />
+            </label>
           </div>
         </div>
       </div>
@@ -80,9 +113,14 @@
             <img
               src="./../../assets/images/icon-minus.svg"
               (click)="onMinus()"
+              class="icon"
             />
             <span class="fw-bold mx-md-4 mx-lg-5">{{ quantity }}</span>
-            <img src="./../../assets/images/icon-plus.svg" (click)="onPlus()" />
+            <img
+              src="./../../assets/images/icon-plus.svg"
+              (click)="onPlus()"
+              class="icon"
+            />
           </div>
           <button
             type="button"

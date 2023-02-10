@@ -15,4 +15,14 @@ body {
 
 .icon {
     font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+//Overlay
+.overlay-backdrop {
+    background-color: rgba($color: #000000, $alpha: 0.6);
 }

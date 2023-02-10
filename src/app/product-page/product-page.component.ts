@@ -10,6 +10,7 @@ import { OverlayService } from '../shared/services/overlay.service';
   styleUrls: ['./product-page.component.scss'],
 })
 export class ProductPageComponent {
+  number: number;
   quantity: number;
   price: number;
   productName: string;
@@ -20,6 +21,7 @@ export class ProductPageComponent {
     private cartService: CartService,
     private overlayService: OverlayService
   ) {
+    this.number = 1;
     this.quantity = 0;
     this.price = 125.0;
     this.totalPrice = 0;
@@ -52,5 +54,20 @@ export class ProductPageComponent {
 
   onProduct() {
     this.overlayService.openDialog(ProductComponent);
+  }
+
+  openImage(id: any) {
+    if (id == 1) {
+      this.number = 1;
+    }
+    if (id == 2) {
+      this.number = 2;
+    }
+    if (id == 3) {
+      this.number = 3;
+    }
+    if (id == 4) {
+      this.number = 4;
+    }
   }
 }

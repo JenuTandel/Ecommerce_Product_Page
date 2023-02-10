@@ -7,10 +7,20 @@
     }
 }
 
+.icon-cart>span {
+    height: 13px;
+    width: 20px;
+    border-radius: 50px;
+    top: -4px;
+    left: 12px;
+    font-size: 12px;
+}
+
 .profile-wrapper {
     height: 25px;
     width: 25px;
     border-radius: 50%;
+    cursor: pointer;
 
     @include media-breakpoint-up(sm) {
         height: 40px;
@@ -26,5 +36,4 @@
         height: 100%;
         width: 100%;
     }
-
 }

@@ -13,12 +13,17 @@ export class OverlayService {
   }
 
   openDialog(component: any): ComponentRef<any> {
-    const positionStrategy = this.overlay.position().global();
+    const positionStrategy = this.overlay
+      .position()
+      .global()
+      .centerHorizontally()
+      .centerVertically();
 
     // Create the overlay with customizable options
     const overlayRef = this.overlay.create({
       positionStrategy,
       hasBackdrop: true,
+      backdropClass: 'overlay-backdrop',
     });
 
     const portal = new ComponentPortal(component);

@@ -38,6 +38,10 @@
   content: "\e901";
   color: #69707d;
 }
+.icon-close-white:before {
+  content: "\e901";
+  color: #ffffff;
+}
 .icon-delete:before {
   content: "\e902";
   color: #c3cad9;
@@ -52,6 +56,7 @@
 }
 .icon-next:before {
   content: "\e905";
+  color: #000000;
 }
 .icon-plus:before {
   content: "\e906";
@@ -59,6 +64,7 @@
 }
 .icon-previous:before {
   content: "\e907";
+  color: #000000;
 }
 .icon-logo:before {
   content: "\e908";

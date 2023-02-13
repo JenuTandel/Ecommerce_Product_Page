@@ -1,5 +1,5 @@
 <div
-  class="images-wrapper h-100 d-md-flex d-none flex-column justify-content-center align-items-center"
+  class="images-wrapper h-100 d-md-flex d-none flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle"
 >
   <div class="text-end text-white w-100 mb-3">
     <span class="icon icon-close-white" (click)="onClose()"></span>
@@ -26,17 +26,50 @@
     </div>
   </figure>
   <div class="d-flex">
-    <div class="product-image-wrapper" (click)="openImage(1)">
-      <img src="./../../../../assets/images/image-product-1-thumbnail.jpg" />
+    <div class="d-flex product-image-wrapper" (click)="openImage(1)">
+      <input
+        type="radio"
+        class="produuct-image d-none"
+        name="product-image"
+        id="pimg1"
+        checked
+      />
+      <label for="pimg1">
+        <img src="./../../../../assets/images/image-product-1-thumbnail.jpg" />
+      </label>
     </div>
-    <div class="product-image-wrapper" (click)="openImage(2)">
-      <img src="./../../../../assets/images/image-product-2-thumbnail.jpg" />
+    <div class="d-flex product-image-wrapper" (click)="openImage(2)">
+      <input
+        type="radio"
+        class="produuct-image d-none"
+        name="product-image"
+        id="pimg2"
+      />
+      <label for="pimg2">
+        <img src="./../../../../assets/images/image-product-2-thumbnail.jpg" />
+      </label>
     </div>
-    <div class="product-image-wrapper" (click)="openImage(3)">
-      <img src="./../../../../assets/images/image-product-3-thumbnail.jpg" />
+    <div class="d-flex product-image-wrapper" (click)="openImage(3)">
+      <input
+        type="radio"
+        class="produuct-image d-none"
+        name="product-image"
+        id="pimg3"
+      />
+      <label for="pimg3">
+        <img src="./../../../../assets/images/image-product-3-thumbnail.jpg" />
+      </label>
     </div>
-    <div class="product-image-wrapper" (click)="openImage(4)">
-      <img src="./../../../../assets/images/image-product-4-thumbnail.jpg" />
+    <div class="d-flex product-image-wrapper" (click)="openImage(4)">
+      <input
+        type="radio"
+        class="produuct-image d-none"
+        name="product-image"
+        id="pimg4"
+      />
+      <label for="pimg4">
+        <img src="./../../../../assets/images/image-product-1-thumbnail.jpg" />
+      </label>
     </div>
   </div>
 </div>

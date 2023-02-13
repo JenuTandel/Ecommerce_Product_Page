@@ -70,4 +70,18 @@ export class ProductPageComponent {
       this.number = 4;
     }
   }
+
+  onPrevious() {
+    this.number = this.number - 1;
+    if (this.number == 0) {
+      this.number = 4;
+    }
+  }
+
+  onNext() {
+    this.number = this.number + 1;
+    if (this.number == 4 || this.number == 5) {
+      this.number = 1;
+    }
+  }
 }

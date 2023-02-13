@@ -13,11 +13,7 @@ export class OverlayService {
   }
 
   openDialog(component: any): ComponentRef<any> {
-    const positionStrategy = this.overlay
-      .position()
-      .global()
-      .centerHorizontally()
-      .centerVertically();
+    const positionStrategy = this.overlay.position().global();
 
     // Create the overlay with customizable options
     const overlayRef = this.overlay.create({
